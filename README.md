@@ -1,8 +1,21 @@
-# Texas Hold'em em C
+# ♠️ Texas Hold'em em C
 
-Jogo de poker Texas Hold'em em C puro, com menu interativo no terminal, jogado contra bots.
+![Build](https://github.com/Ronaldolms/Texas-Holdem-/actions/workflows/ci.yml/badge.svg)
+![Language](https://img.shields.io/badge/language-C-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Funcionalidades
+Jogo de poker **Texas Hold'em** em C puro, com menu interativo no terminal, jogado contra bots.
+
+## 🎮 Demonstração
+=======================================
+TEXAS HOLD'EM - MENU
+Jogar nova partida
+Regras do jogo
+Sair
+=======================================
+Escolha uma opcao:
+
+## ✨ Funcionalidades
 
 - Menu principal (jogar / ver regras / sair)
 - Suporte de 2 a 6 jogadores (você + bots)
@@ -13,23 +26,24 @@ Jogo de poker Texas Hold'em em C puro, com menu interativo no terminal, jogado c
 - Bots com decisões simples de fold/call/raise
 - Showdown com exibição das mãos e distribuição do pote
 
-## Estrutura do projeto
-
-```
+## 📁 Estrutura do projeto
 texas-holdem/
 ├── include/
-│   └── poker.h        # structs e protótipos
+│ └── poker.h # structs e protótipos
 ├── src/
-│   ├── main.c          # loop principal / fluxo da partida
-│   ├── menu.c           # menu e telas de texto
-│   ├── baralho.c         # baralho, embaralhar, comprar carta
-│   ├── jogo.c              # regras da mesa, apostas, distribuição do pote
-│   └── avaliador.c          # avaliação e ranking de mãos de poker
+│ ├── main.c # loop principal / fluxo da partida
+│ ├── menu.c # menu e telas de texto
+│ ├── baralho.c # baralho, embaralhar, comprar carta
+│ ├── jogo.c # regras da mesa, apostas, distribuição do pote
+│ └── avaliador.c # avaliação e ranking de mãos de poker
+├── .github/
+│ └── workflows/
+│ └── ci.yml # build automático a cada push/PR
 ├── Makefile
+├── LICENSE
 └── README.md
-```
 
-## Como compilar
+## 🔧 Como compilar
 
 Requer `gcc` e `make`.
 
@@ -39,7 +53,7 @@ make
 
 Isso gera o executável `texas_holdem` na raiz do projeto.
 
-## Como jogar
+## ▶️ Como jogar
 
 ```bash
 ./texas_holdem
@@ -53,23 +67,30 @@ Siga o menu:
 
 Durante a rodada de apostas, você escolhe entre:
 
-- `1` — Pagar (call) ou Passar (check), se não houver nada a pagar
-- `2` — Aumentar a aposta (raise)
-- `3` — Desistir (fold)
+| Opção | Ação |
+|-------|------|
+| `1` | Pagar (call) ou Passar (check), se não houver nada a pagar |
+| `2` | Aumentar a aposta (raise) |
+| `3` | Desistir (fold) |
 
-## Limpar build
+## 🧹 Limpar build
 
 ```bash
 make clean
 ```
 
-## Possíveis melhorias futuras
+## 🗺️ Possíveis melhorias futuras
 
-- Side pots para all-ins com valores diferentes
-- IA de bots mais sofisticada (baseada em força real da mão)
-- Suporte a múltiplas mesas / torneio
-- Interface gráfica (ncurses ou similar)
+- [ ] Side pots para all-ins com valores diferentes
+- [ ] IA de bots mais sofisticada (baseada em força real da mão)
+- [ ] Suporte a múltiplas mesas / torneio
+- [ ] Interface gráfica (ncurses ou similar)
+- [ ] Testes unitários para o avaliador de mãos
 
-## Licença
+## 🤝 Contribuindo
 
-Sinta-se livre para usar, modificar e distribuir este projeto.
+Contribuições são bem-vindas! Sinta-se livre para abrir uma *issue* ou um *pull request*.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT — veja o arquivo [LICENSE](LICENSE) para mais detalhes.
