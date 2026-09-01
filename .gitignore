@@ -1,0 +1,12 @@
+# Objetos e binários
+*.o
+*.out
+texas_holdem
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Sistema
+.DS_Store
