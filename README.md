@@ -7,13 +7,17 @@
 Jogo de poker **Texas Hold'em** em C puro, com menu interativo no terminal, jogado contra bots.
 
 ## 🎮 Demonstração
+```
 =======================================
-TEXAS HOLD'EM - MENU
-Jogar nova partida
-Regras do jogo
-Sair
+        TEXAS HOLD'EM - MENU           
 =======================================
-Escolha uma opcao:
+ 1. Jogar nova partida
+ 2. Regras do jogo
+ 3. Sair
+=======================================
+Escolha uma opcao: 
+```
+
 
 ## ✨ Funcionalidades
 
